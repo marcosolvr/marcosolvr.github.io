@@ -9,6 +9,8 @@
     <img alt="Develop Marcos" src="https://img.shields.io/badge/develop-marcosolvr-%2304D361">
 </p>
 
+Para ver o layout no GitHub Pages acesse https://marcosolvr.github.io/index.html
+
 ## 💻 Sobre o Projeto
 
 Esse layout do Maeztra foi desenvolvido como parte do teste para Desenvolvedor Front-End da empresa. Objetivo do teste é avaliar o nível de conhecimento e experiência com layout e raciocínio lógico.
