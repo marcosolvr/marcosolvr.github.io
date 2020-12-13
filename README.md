@@ -9,7 +9,7 @@
     <img alt="Develop Marcos" src="https://img.shields.io/badge/develop-marcosolvr-%2304D361">
 </p>
 
-Para ver o layout no GitHub Pages acesse https://marcosolvr.github.io/index.html
+Para ver o layout no GitHub Pages acesse https://marcosolvr.github.io/
 
 ## 💻 Sobre o Projeto
 
