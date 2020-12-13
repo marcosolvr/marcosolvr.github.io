@@ -624,6 +624,7 @@ footer {
 
   .newsletter {
     flex-direction: column;
+    height: 200px;
   }
 
   .newsletter div {
