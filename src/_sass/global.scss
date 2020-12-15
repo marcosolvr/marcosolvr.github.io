@@ -1,5 +1,7 @@
 @import "./colors.scss";
 
+$break-medium: 600px;
+$break-large: 1150px;
 $border-radius: 10px;
 
 * {
@@ -31,8 +33,10 @@ input {
 }
 
 button {
+  font-family: 'Montserrat', sans-serif;
   background-color: $primary;
   color: $whiteLight;
   font-weight: 400;
   background: $primary;
+  cursor: pointer;
 }
