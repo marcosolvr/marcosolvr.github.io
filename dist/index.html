@@ -5,17 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maeztra</title>
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./assets/js/glider.min.css">-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" type="text/css" href="./assets/js/glider.min.css">-->
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link href="./css/style.css" rel="stylesheet"> 
 </head>
 <body>
 
-  <h1>Ola mundo scss</h1>  
-  <!-- <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-  <script src="assets/js/glider.min.js"></script> -->
+  <header>
+    <div class="header-message">Acompanhe as melhores promoções disponíveis aqui na Maeztra.</div>
+
+    <div class="header-content">
+      <div class="header-mobile-nav">
+        <a href="#">
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </a>
+      </div>
+
+      <img class="header-logo" src="./images/logo.svg" alt="Maeztra Logo" />
+
+      <div class="header-search">
+        <div class="header-mobile-search">
+          <a href="#">
+            <ion-icon class="icon" name="search-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="header-input-search">
+          <input type="search" placeholder="O Que Você Busca?" />
+          <button>Buscar</button>
+        </div>
+      </div>
+      
+      <div class="header-account">
+        <div class="header-mobile-account">
+          <a href="#">
+            <ion-icon class="icon" name="bag-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="header-account-list">
+          <ul>
+            <li><a href="#"><ion-icon class="icon" name="person-outline"></ion-icon> 
+              <span class="text-icon">Minha Conta</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="icon" name="heart-outline"></ion-icon>
+                <span class="text-icon">Minha Conta</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="icon" name="bag-outline"></ion-icon>
+                <span class="text-icon">Meu Carrinho</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- <script src="assets/js/glider.min.js"></script> -->
+  <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
   <script src="./js/bundle.js"></script>
 </body>
 </html>

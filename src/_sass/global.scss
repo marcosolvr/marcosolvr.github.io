@@ -1,0 +1,33 @@
+@import "./colors.scss";
+
+$break-small: 470px;
+$break-large: 1200px;
+$border-radius: 10px;
+
+* {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: $whiteLight;
+  color: $black;
+}
+
+input, button {
+  border: none;
+}
+
+input {
+  padding: 0 14px 0 24px;
+  outline: none;
+}
+
+button {
+  color: $whiteLight;
+}

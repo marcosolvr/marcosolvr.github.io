@@ -1,0 +1,82 @@
+@import "./colors.scss";
+
+header {
+  width: 100vw;
+  background-color: $whiteLight;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+
+  .header-message {
+    text-align: center;
+    padding: 3px 0;
+    background-color: $black;
+    font-size: 1rem;
+    color: $white;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 160px;
+
+    .header-mobile-nav {
+      display: none;
+    }
+
+    .header-search {
+      .header-mobile-search {
+        display: none;
+      } 
+    }
+
+    .header-account {
+      .header-mobile-account {
+        display: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $break-small) {
+    margin: 0;
+    background-color: red;
+
+    .icon {
+      color: $black;
+      font-size: 2rem;
+    }
+    
+    .header-content {
+      margin: 0 20px;
+      height: 88px;
+
+      .header-mobile-nav {
+        display: block;
+      }
+      .header-logo {
+        width: 110px;
+      }
+
+      .header-search {
+        .header-mobile-search {
+          display: block;
+        } 
+        .header-input-search {
+          display: none;
+        } 
+      }
+
+      .header-account {
+        .header-mobile-account {
+          display: block;
+        }
+        .header-account-list {
+          display: none;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $break-large) {
+    background: violet;
+  }
+}

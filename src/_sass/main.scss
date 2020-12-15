@@ -1,5 +1,5 @@
 @charset "utf-8";
 
-body {
-  background-color: red;
-}
+@import "./global.scss",
+        "./colors.scss",
+        "./header.scss";
