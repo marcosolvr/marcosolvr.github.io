@@ -11,6 +11,9 @@ body {
   background-color: #FFFFFF;
   color: #353535; }
 
+a {
+  color: #353535; }
+
 input, button {
   border: none; }
 
@@ -19,9 +22,13 @@ input {
   outline: none; }
 
 button {
-  color: #FFFFFF; }
+  background-color: #FAA500;
+  color: #FFFFFF;
+  font-weight: 400;
+  background: #FAA500; }
 
 header {
+  /* for mobile */
   width: 100vw;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08); }
@@ -31,43 +38,102 @@ header {
     background-color: #353535;
     font-size: 1rem;
     color: #EFEFEF; }
+  header .icon {
+    color: #353535;
+    font-size: 2rem; }
   header .header-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 160px; }
+    margin: 0 20px;
+    height: 88px; }
     header .header-content .header-mobile-nav {
-      display: none; }
+      display: block; }
+    header .header-content .header-logo {
+      width: 110px; }
     header .header-content .header-search .header-mobile-search {
+      display: block; }
+    header .header-content .header-search .header-input-search {
       display: none; }
     header .header-content .header-account .header-mobile-account {
+      display: block; }
+    header .header-content .header-account .header-account-list {
       display: none; }
-  @media screen and (max-width: 470px) {
+  @media only screen and (min-width: 600px) {
     header {
-      margin: 0;
-      background-color: red; }
-      header .icon {
-        color: #353535;
-        font-size: 2rem; }
+      /* for tablet */ }
       header .header-content {
-        margin: 0 20px;
-        height: 88px; }
-        header .header-content .header-mobile-nav {
-          display: block; }
-        header .header-content .header-logo {
-          width: 110px; }
+        margin: 0 5vw; }
         header .header-content .header-search .header-mobile-search {
-          display: block; }
-        header .header-content .header-search .header-input-search {
           display: none; }
-        header .header-content .header-account .header-mobile-account {
-          display: block; }
-        header .header-content .header-account .header-account-list {
-          display: none; } }
-  @media screen and (min-width: 1200px) {
+        header .header-content .header-search .header-input-search {
+          display: flex;
+          height: 40px;
+          border-radius: 10px;
+          background: #EFEFEF; }
+          header .header-content .header-search .header-input-search input {
+            flex-grow: 1;
+            width: 35vw;
+            font-size: 1.2rem;
+            background: none; }
+          header .header-content .header-search .header-input-search button {
+            width: 100px;
+            font-size: 1.2rem;
+            border-radius: 8px; } }
+  @media only screen and (min-width: 1150px) {
     header {
-      background: violet; } }
+      /* for desktop */ }
+      header .header-content {
+        gap: 2vw;
+        margin: 0 10vw; }
+        header .header-content .header-mobile-nav {
+          display: none; }
+        header .header-content .header-search .header-mobile-search {
+          display: none; }
+        header .header-content .header-search .header-input-search {
+          display: flex;
+          width: 35vw;
+          height: 40px;
+          border-radius: 10px;
+          background: #EFEFEF; }
+          header .header-content .header-search .header-input-search button {
+            width: 119px; }
+        header .header-content .header-account .header-mobile-account {
+          display: none; }
+        header .header-content .header-account .header-account-list {
+          display: flex; }
+          header .header-content .header-account .header-account-list ul li {
+            display: inline-block;
+            margin-right: 20px; }
+            header .header-content .header-account .header-account-list ul li:last-child {
+              margin-right: 0;
+              border: 2px solid #FAA500;
+              border-radius: 8px;
+              padding: 10px 14px; }
+            header .header-content .header-account .header-account-list ul li a {
+              color: #353535; }
+              header .header-content .header-account .header-account-list ul li a .icon {
+                font-size: 1.2rem; }
+              header .header-content .header-account .header-account-list ul li a span {
+                font-size: 1.2rem; } }
+
+nav {
+  display: none; }
+  @media only screen and (min-width: 600px) {
+    nav {
+      display: none; } }
+  @media only screen and (min-width: 1150px) {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 48px; }
+      nav ul li {
+        display: inline-block;
+        margin: 0 44px; }
+        nav ul li a {
+          font-size: 1.2rem; } }
 
 
 /*# sourceMappingURL=style.css.map*/

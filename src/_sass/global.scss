@@ -1,7 +1,5 @@
 @import "./colors.scss";
 
-$break-small: 470px;
-$break-large: 1200px;
 $border-radius: 10px;
 
 * {
@@ -19,6 +17,10 @@ body {
   color: $black;
 }
 
+a {
+  color: $black;
+}
+
 input, button {
   border: none;
 }
@@ -29,5 +31,8 @@ input {
 }
 
 button {
+  background-color: $primary;
   color: $whiteLight;
+  font-weight: 400;
+  background: $primary;
 }
