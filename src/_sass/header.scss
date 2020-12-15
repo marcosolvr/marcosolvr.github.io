@@ -32,6 +32,7 @@ header {
     }
     .header-logo {
       width: 110px;
+      max-width: 147px;
     }
 
     .header-search {
@@ -93,6 +94,11 @@ header {
       gap: 2vw;
       margin: 0 10vw;
 
+      .header-logo {
+        width: 9vw;
+        height: 18px;
+      }
+
       .header-mobile-nav {
         display: none;
       }
@@ -116,7 +122,6 @@ header {
       }
   
       .header-account {
-
         .header-mobile-account {
           display: none;
         }
@@ -126,6 +131,7 @@ header {
 
           ul {
             li {
+              font-size: 1.2rem;
               display: inline-block;
               margin-right: 20px;
               
@@ -139,6 +145,9 @@ header {
               a {
                 color: $black;
 
+                &:hover {
+                  color: $primary;
+                }
                 .icon {
                   font-size: 1.2rem;
                 }
@@ -224,6 +233,10 @@ nav {
   .banner-navigation {
     .glider-prev, .glider-next {
       display: none;
+
+      &:hover {
+        background: none;
+      }
     }
 
     .dots {

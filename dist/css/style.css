@@ -13,6 +13,8 @@ body {
 
 a {
   color: #353535; }
+  a:hover {
+    color: #FAA500; }
 
 input, button {
   border: none; }
@@ -28,6 +30,8 @@ button {
   font-weight: 400;
   background: #FAA500;
   cursor: pointer; }
+  button:hover {
+    background-color: #e99b00; }
 
 header {
   /* for mobile */
@@ -53,7 +57,8 @@ header {
     header .header-content .header-mobile-nav {
       display: block; }
     header .header-content .header-logo {
-      width: 110px; }
+      width: 110px;
+      max-width: 147px; }
     header .header-content .header-search .header-mobile-search {
       display: block; }
     header .header-content .header-search .header-input-search {
@@ -89,6 +94,9 @@ header {
       header .header-content {
         gap: 2vw;
         margin: 0 10vw; }
+        header .header-content .header-logo {
+          width: 9vw;
+          height: 18px; }
         header .header-content .header-mobile-nav {
           display: none; }
         header .header-content .header-search .header-mobile-search {
@@ -106,6 +114,7 @@ header {
         header .header-content .header-account .header-account-list {
           display: flex; }
           header .header-content .header-account .header-account-list ul li {
+            font-size: 1.2rem;
             display: inline-block;
             margin-right: 20px; }
             header .header-content .header-account .header-account-list ul li:last-child {
@@ -115,6 +124,8 @@ header {
               padding: 10px 14px; }
             header .header-content .header-account .header-account-list ul li a {
               color: #353535; }
+              header .header-content .header-account .header-account-list ul li a:hover {
+                color: #FAA500; }
               header .header-content .header-account .header-account-list ul li a .icon {
                 font-size: 1.2rem; }
               header .header-content .header-account .header-account-list ul li a span {
@@ -167,6 +178,8 @@ nav {
         border-radius: 4px; }
   .full-banner .banner-navigation .glider-prev, .full-banner .banner-navigation .glider-next {
     display: none; }
+    .full-banner .banner-navigation .glider-prev:hover, .full-banner .banner-navigation .glider-next:hover {
+      background: none; }
   .full-banner .banner-navigation .dots {
     width: 100%;
     position: absolute;

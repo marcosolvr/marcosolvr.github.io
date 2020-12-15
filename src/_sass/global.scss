@@ -21,6 +21,9 @@ body {
 
 a {
   color: $black;
+  &:hover {
+    color: $primary;
+  }
 }
 
 input, button {
@@ -39,4 +42,8 @@ button {
   font-weight: 400;
   background: $primary;
   cursor: pointer;
+
+  &:hover {
+    background-color: $primaryDark;
+  }
 }
