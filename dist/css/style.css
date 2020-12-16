@@ -438,8 +438,8 @@ nav {
 
 .newsletter-section {
   background-color: #FAFAFA;
-  border-top: 3px solid #EFEFEF;
-  border-bottom: 3px solid #EFEFEF;
+  border-top: 2px solid #EFEFEF;
+  border-bottom: 2px solid #EFEFEF;
   padding: 24px 0; }
   .newsletter-section div {
     display: flex;
@@ -489,6 +489,87 @@ nav {
           width: 130px;
           height: 40px;
           font-weight: 700; } }
+
+footer {
+  padding: 37px 0 47px 0;
+  margin: 0 5vw; }
+  footer .footer-nav {
+    display: flex;
+    flex-direction: column; }
+    footer .footer-nav div {
+      display: flex;
+      flex-direction: column; }
+      footer .footer-nav div h3 {
+        font-size: 1.4rem;
+        margin-bottom: 17px; }
+        footer .footer-nav div h3::after {
+          content: '+';
+          float: right; }
+      footer .footer-nav div ul {
+        display: inline-block; }
+        footer .footer-nav div ul li {
+          margin-bottom: 14px;
+          font-size: 1.2rem; }
+  @media only screen and (min-width: 600px) {
+    footer {
+      margin: 0 auto;
+      padding: 37px 5vw 57px 5vw;
+      max-width: 950px; }
+      footer .footer-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; }
+        footer .footer-nav div {
+          display: flex;
+          flex-direction: column; }
+          footer .footer-nav div h3::after {
+            display: none; }
+          footer .footer-nav div ul {
+            display: inline-block; }
+            footer .footer-nav div ul li {
+              margin-bottom: 14px;
+              font-size: 1.2rem; } }
+  @media only screen and (min-width: 1150px) {
+    footer {
+      padding: 37px 0 57px 0; } }
+
+.external-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #353535;
+  padding-top: 24px; }
+  .external-links div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 36px; }
+    .external-links div a {
+      margin-right: 24px; }
+      .external-links div a p {
+        color: #FFFFFF;
+        line-height: 2rem; }
+      .external-links div a:last-child {
+        margin-right: 0; }
+  @media only screen and (min-width: 600px) {
+    .external-links {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 27px 5vw 27px 5vw; }
+      .external-links div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 0; }
+        .external-links div a {
+          margin-right: 22px; }
+          .external-links div a p {
+            color: #FFFFFF;
+            line-height: 2rem; }
+          .external-links div a:last-child {
+            margin-right: 0; } }
 
 
 /*# sourceMappingURL=style.css.map*/

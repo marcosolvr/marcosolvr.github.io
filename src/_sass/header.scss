@@ -648,8 +648,8 @@ nav {
 
 .newsletter-section {
   background-color: #FAFAFA;
-  border-top: 3px solid #EFEFEF;
-  border-bottom: 3px solid #EFEFEF;
+  border-top: 2px solid #EFEFEF;
+  border-bottom: 2px solid #EFEFEF;
   padding: 24px 0;
 
   div {
@@ -714,6 +714,124 @@ nav {
         width: 130px;
         height: 40px;
         font-weight: 700;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 37px 0 47px 0;
+  margin: 0 5vw;
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 17px;
+  
+        &::after {
+          content: '+';
+          float: right;
+        }
+      }
+      ul {
+        display: inline-block;
+        li {
+          margin-bottom: 14px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-medium) {
+    margin: 0 auto;
+    padding: 37px 5vw 57px 5vw;
+    max-width: 950px;
+    
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          &::after {
+            display: none;
+          }
+        }
+        ul {
+          display: inline-block;
+          li {
+            margin-bottom: 14px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-large) {
+    padding: 37px 0 57px 0;
+  }
+}
+
+.external-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  padding-top: 24px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 36px;
+    a {
+      margin-right: 24px;
+
+      p {
+        color: $whiteLight;
+        line-height: 2rem;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 5vw 27px 5vw;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 0;
+      a {
+        margin-right: 22px;
+  
+        p {
+          color: $whiteLight;
+          line-height: 2rem;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }
