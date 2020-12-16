@@ -582,3 +582,53 @@ nav {
     }
   }
 }
+
+.new-collection-banner {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 5vw;
+
+  div {
+    h3 {
+      text-align: left;
+      margin-bottom: 0;
+    }
+    p {
+      margin: 16px 30px 24px 0;
+      font-size: 1.2rem;
+      line-height: 1.9rem;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  @media only screen and (min-width: $break-medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    img {
+      max-width: 1114px;
+    }
+  }
+  
+  @media only screen and (min-width: $break-large) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 80px 5vw;
+
+    div {
+      width: 100%;
+      margin-right: 64px;
+    }
+
+    img {
+      width: 60vw;
+      max-width: 1114px;
+    }
+  }
+}
