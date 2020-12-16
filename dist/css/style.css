@@ -33,6 +33,15 @@ button {
   button:hover {
     background-color: #e99b00; }
 
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center; }
+  @media only screen and (min-width: 1150px) {
+    .section-title {
+      font-size: 2.7rem;
+      margin-bottom: 30px; } }
+
 header {
   /* for mobile */
   width: 100vw;
@@ -176,9 +185,11 @@ nav {
         font-size: 1.3rem;
         font-weight: 700;
         border-radius: 4px; }
-  .full-banner .banner-navigation .glider-prev, .full-banner .banner-navigation .glider-next {
-    display: none; }
-    .full-banner .banner-navigation .glider-prev:hover, .full-banner .banner-navigation .glider-next:hover {
+  .full-banner .banner-navigation .glider-banner-prev, .full-banner .banner-navigation .glider-banner-next {
+    display: none;
+    background: none;
+    color: #353535; }
+    .full-banner .banner-navigation .glider-banner-prev:hover, .full-banner .banner-navigation .glider-banner-next:hover {
       background: none; }
   .full-banner .banner-navigation .dots {
     width: 100%;
@@ -222,18 +233,18 @@ nav {
         .full-banner .banner .banner-item .banner-content button {
           width: 128px;
           height: 48px; }
-    .full-banner .banner-navigation .glider-prev, .full-banner .banner-navigation .glider-next {
+    .full-banner .banner-navigation .glider-banner-prev, .full-banner .banner-navigation .glider-banner-next {
       display: block;
       position: absolute;
       top: 50%;
       transform: translateY(-50%); }
-    .full-banner .banner-navigation .glider-prev {
+    .full-banner .banner-navigation .glider-banner-prev {
       left: 161px; }
-      .full-banner .banner-navigation .glider-prev .icon {
+      .full-banner .banner-navigation .glider-banner-prev .icon {
         font-size: 32px; }
-    .full-banner .banner-navigation .glider-next {
+    .full-banner .banner-navigation .glider-banner-next {
       right: 161px; }
-      .full-banner .banner-navigation .glider-next .icon {
+      .full-banner .banner-navigation .glider-banner-next .icon {
         font-size: 32px; }
     .full-banner .banner-navigation .glider-dot {
       width: 16px;
@@ -273,10 +284,6 @@ nav {
 
 .partner-brands {
   margin: 40px 0; }
-  .partner-brands h3 {
-    font-size: 2rem;
-    margin-bottom: 25px;
-    text-align: center; }
   .partner-brands .partner-list {
     padding: 0 5vw; }
     .partner-brands .partner-list .partner {
@@ -286,16 +293,108 @@ nav {
       .partner-brands .partner-list .partner img {
         border-radius: 4px; }
   @media only screen and (min-width: 1150px) {
-    .partner-brands .partner-list {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 0; }
-      .partner-brands .partner-list .partner {
-        margin: 0 7px; }
-        .partner-brands .partner-list .partner img {
-          margin: 0 7px; } }
+    .partner-brands {
+      margin: 74px 0; }
+      .partner-brands .partner-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0; }
+        .partner-brands .partner-list .partner {
+          margin: 0 7px; }
+          .partner-brands .partner-list .partner img {
+            margin: 0 7px; } }
+
+.most-requested {
+  position: relative; }
+  .most-requested .most-requested-navigation {
+    display: none; }
+  .most-requested .most-requested-list {
+    margin-left: 5vw; }
+    .most-requested .most-requested-list .product {
+      margin-right: 15px;
+      min-width: 308px; }
+      .most-requested .most-requested-list .product .product-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 254px; }
+        .most-requested .most-requested-list .product .product-info .product-colors {
+          display: flex;
+          flex-direction: row; }
+          .most-requested .most-requested-list .product .product-info .product-colors li {
+            width: 27px;
+            height: 27px;
+            margin: 8px 8px 8px 0;
+            border-radius: 4px;
+            cursor: pointer; }
+        .most-requested .most-requested-list .product .product-info a h4 {
+          font-size: 1.7rem; }
+        .most-requested .most-requested-list .product .product-info a h5 {
+          font-weight: 400;
+          font-size: 1.4rem; }
+        .most-requested .most-requested-list .product .product-info p {
+          font-size: 1.1rem;
+          line-height: 18px;
+          margin: 8px 0;
+          opacity: 0.5; }
+        .most-requested .most-requested-list .product .product-info button {
+          font-family: 'Titillium Web', sans-serif;
+          font-size: 1.4rem;
+          border-radius: 4px;
+          height: 35px; }
+  @media only screen and (min-width: 1150px) {
+    .most-requested .most-requested-navigation {
+      display: flex; }
+      .most-requested .most-requested-navigation .glider-most-requested-prev, .most-requested .most-requested-navigation .glider-most-requested-next {
+        display: block;
+        background: none;
+        color: #353535;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%); }
+      .most-requested .most-requested-navigation .glider-most-requested-prev {
+        left: 161px; }
+        .most-requested .most-requested-navigation .glider-most-requested-prev .icon {
+          font-size: 32px; }
+      .most-requested .most-requested-navigation .glider-most-requested-next {
+        right: 161px; }
+        .most-requested .most-requested-navigation .glider-most-requested-next .icon {
+          font-size: 32px; }
+    .most-requested .most-requested-list {
+      position: relative;
+      margin: 0 5vw; }
+      .most-requested .most-requested-list .product {
+        margin-right: 15px;
+        min-width: 308px; }
+        .most-requested .most-requested-list .product .product-info {
+          display: flex;
+          flex-direction: column;
+          max-width: 254px; }
+          .most-requested .most-requested-list .product .product-info .product-colors {
+            display: flex;
+            flex-direction: row; }
+            .most-requested .most-requested-list .product .product-info .product-colors li {
+              width: 27px;
+              height: 27px;
+              margin: 8px 8px 8px 0;
+              border-radius: 4px;
+              cursor: pointer; }
+          .most-requested .most-requested-list .product .product-info a h4 {
+            font-size: 1.7rem; }
+          .most-requested .most-requested-list .product .product-info a h5 {
+            font-weight: 400;
+            font-size: 1.4rem; }
+          .most-requested .most-requested-list .product .product-info p {
+            font-size: 1.1rem;
+            line-height: 18px;
+            margin: 8px 0;
+            opacity: 0.5; }
+          .most-requested .most-requested-list .product .product-info button {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 1.4rem;
+            border-radius: 4px;
+            height: 35px; } }
 
 
 /*# sourceMappingURL=style.css.map*/

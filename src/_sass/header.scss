@@ -231,8 +231,10 @@ nav {
   }
   
   .banner-navigation {
-    .glider-prev, .glider-next {
+    .glider-banner-prev, .glider-banner-next {
       display: none;
+      background: none;
+      color: $black;
 
       &:hover {
         background: none;
@@ -310,21 +312,21 @@ nav {
     }
 
     .banner-navigation {
-      .glider-prev, .glider-next {
+      .glider-banner-prev, .glider-banner-next {
         display: block;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
       }
 
-      .glider-prev {
+      .glider-banner-prev {
         left: 161px;
         .icon {
           font-size: 32px;
         }
       }
 
-      .glider-next {
+      .glider-banner-next {
         right: 161px;
         .icon {
           font-size: 32px;
@@ -392,12 +394,6 @@ nav {
 .partner-brands {
   margin: 40px 0;
 
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 25px;
-    text-align: center;
-  }
-
   .partner-list {
     padding: 0 5vw;
 
@@ -415,6 +411,8 @@ nav {
   @media only screen and (min-width: $break-medium) {}
   
   @media only screen and (min-width: $break-large) {
+    margin: 74px 0;
+
     .partner-list {
         display: flex;
         flex-direction: row;
@@ -427,6 +425,158 @@ nav {
 
         img {
           margin: 0 7px;
+        }
+      }
+    }
+  }
+}
+
+.most-requested {
+  position: relative;
+
+  .most-requested-navigation {
+    display: none;
+  }
+  
+  .most-requested-list {
+    margin-left: 5vw;
+
+    .product {
+      margin-right: 15px;
+      min-width: 308px;
+
+      a {
+        img {}
+      }
+
+      .product-info {
+        display: flex;
+        flex-direction: column;
+        max-width: 254px;
+
+        .product-colors {
+          display: flex;
+          flex-direction: row;
+
+          li {
+            width: 27px;
+            height: 27px;
+            margin: 8px 8px 8px 0;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+        }
+
+        a {
+          h4 {
+            font-size: 1.7rem;
+          }
+          h5 {
+            font-weight: 400;
+            font-size: 1.4rem;
+          }
+        }
+
+        p {
+          font-size: 1.1rem;
+          line-height: 18px;
+          margin: 8px 0;
+          opacity: 0.5;
+        }
+        
+        button {
+          font-family: 'Titillium Web', sans-serif;
+          font-size: 1.4rem;
+          border-radius: 4px;
+          height: 35px;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-medium) {}
+  
+  @media only screen and (min-width: $break-large) {
+    .most-requested-navigation {
+      display: flex;
+
+      .glider-most-requested-prev, .glider-most-requested-next {
+        display: block;
+        background: none;
+        color: $black;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .glider-most-requested-prev {
+        left: 161px;
+        .icon {
+          font-size: 32px;
+        }
+      }
+
+      .glider-most-requested-next {
+        right: 161px;
+        .icon {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .most-requested-list {
+      position: relative;
+      margin: 0 5vw;
+      
+      .product {
+        margin-right: 15px;
+        min-width: 308px;
+
+        a {
+          img {}
+        }
+
+        .product-info {
+          display: flex;
+          flex-direction: column;
+          max-width: 254px;
+
+          .product-colors {
+            display: flex;
+            flex-direction: row;
+
+            li {
+              width: 27px;
+              height: 27px;
+              margin: 8px 8px 8px 0;
+              border-radius: 4px;
+              cursor: pointer;
+            }
+          }
+
+          a {
+            h4 {
+              font-size: 1.7rem;
+            }
+            h5 {
+              font-weight: 400;
+              font-size: 1.4rem;
+            }
+          }
+
+          p {
+            font-size: 1.1rem;
+            line-height: 18px;
+            margin: 8px 0;
+            opacity: 0.5;
+          }
+          
+          button {
+            font-family: 'Titillium Web', sans-serif;
+            font-size: 1.4rem;
+            border-radius: 4px;
+            height: 35px;
+          }
         }
       }
     }
