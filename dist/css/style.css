@@ -404,9 +404,11 @@ nav {
     text-align: left;
     margin-bottom: 0; }
   .new-collection-banner div p {
-    margin: 16px 30px 24px 0;
+    margin: 16px 20px 24px 0;
     font-size: 1.2rem;
     line-height: 1.9rem; }
+  .new-collection-banner div .desktop-text {
+    display: none; }
   .new-collection-banner img {
     width: 100%;
     border-radius: 4px; }
@@ -414,6 +416,10 @@ nav {
     .new-collection-banner {
       flex-direction: row;
       flex-wrap: wrap; }
+      .new-collection-banner div .mobile-text {
+        display: none; }
+      .new-collection-banner div .desktop-text {
+        display: block; }
       .new-collection-banner img {
         max-width: 1114px; } }
   @media only screen and (min-width: 1150px) {
@@ -425,10 +431,64 @@ nav {
       margin: 80px 5vw; }
       .new-collection-banner div {
         width: 100%;
-        margin-right: 64px; }
+        margin-right: 55px; }
       .new-collection-banner img {
         width: 60vw;
         max-width: 1114px; } }
+
+.newsletter-section {
+  background-color: #FAFAFA;
+  border-top: 3px solid #EFEFEF;
+  border-bottom: 3px solid #EFEFEF;
+  padding: 24px 0; }
+  .newsletter-section div {
+    display: flex;
+    margin: 0 5vw;
+    justify-content: space-between; }
+    .newsletter-section div input {
+      border: 1px solid #353535;
+      border-radius: 4px;
+      padding: 3px 14px 3px 24px;
+      width: 60vw; }
+    .newsletter-section div button {
+      font-family: 'Titillium Web', sans-serif;
+      width: 25vw;
+      height: 26px;
+      border-radius: 4px; }
+  @media only screen and (min-width: 600px) {
+    .newsletter-section div input {
+      width: 70vw;
+      height: 40px;
+      font-size: 1.3rem; }
+    .newsletter-section div button {
+      width: 20vw;
+      height: 40px;
+      border-radius: 4px;
+      font-size: 1.3rem; } }
+  @media only screen and (min-width: 1150px) {
+    .newsletter-section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      height: 120px;
+      padding: 0 5vw; }
+      .newsletter-section h3 {
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-right: 50px; }
+      .newsletter-section div {
+        margin: 0;
+        align-items: center;
+        justify-content: space-between; }
+        .newsletter-section div input {
+          padding: 3px 14px 3px 24px;
+          width: 500px;
+          height: 40px; }
+        .newsletter-section div button {
+          width: 130px;
+          height: 40px;
+          font-weight: 700; } }
 
 
 /*# sourceMappingURL=style.css.map*/
