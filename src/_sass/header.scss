@@ -388,3 +388,47 @@ nav {
       }
   }
 }
+
+.partner-brands {
+  margin: 40px 0;
+
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .partner-list {
+    padding: 0 5vw;
+
+    .partner {
+      display: flex;
+      min-width: 298px;
+      margin-right: 16px;
+
+      img {
+        border-radius: 4px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-medium) {}
+  
+  @media only screen and (min-width: $break-large) {
+    .partner-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+  
+      .partner {
+        margin: 0 7px;
+
+        img {
+          margin: 0 7px;
+        }
+      }
+    }
+  }
+}

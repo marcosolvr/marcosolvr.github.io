@@ -271,5 +271,31 @@ nav {
       margin: 0 7px;
       padding: 11px 0 11px 27px; } }
 
+.partner-brands {
+  margin: 40px 0; }
+  .partner-brands h3 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    text-align: center; }
+  .partner-brands .partner-list {
+    padding: 0 5vw; }
+    .partner-brands .partner-list .partner {
+      display: flex;
+      min-width: 298px;
+      margin-right: 16px; }
+      .partner-brands .partner-list .partner img {
+        border-radius: 4px; }
+  @media only screen and (min-width: 1150px) {
+    .partner-brands .partner-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 0; }
+      .partner-brands .partner-list .partner {
+        margin: 0 7px; }
+        .partner-brands .partner-list .partner img {
+          margin: 0 7px; } }
+
 
 /*# sourceMappingURL=style.css.map*/
