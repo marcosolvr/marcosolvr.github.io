@@ -1,0 +1,185 @@
+@import "./colors.scss";
+
+header {
+  width: 100vw;
+  position: relative;
+  background-color: $whiteLight;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+
+  .header-message {
+    text-align: center;
+    padding: 3px 0;
+    background-color: $black;
+    font-size: 1rem;
+    color: $white;
+  }
+
+  .icon {
+    color: $black;
+    font-size: 2rem;
+  }
+    
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    height: 88px;
+
+    .header-mobile-nav {
+      display: block;
+    }
+    .header-logo {
+      width: 110px;
+      max-width: 147px;
+    }
+
+    .header-search {
+      .header-mobile-search {
+        display: block;
+      } 
+      .header-input-search {
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        z-index: 99;
+        
+        input {
+          width: 90vw;
+          height: 40px;
+          margin: 0 5vw;
+          font-size: 1.2rem;
+          border-radius: 4px;
+          border: 2px solid $black;
+        }
+
+        button {
+          display: none;
+        }
+      } 
+    }
+     .header-account {
+      .header-mobile-account {
+        display: block;
+      }
+      .header-account-list {
+        display: none;        
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-medium) {
+    .header-content {
+      margin: 0 5vw;
+  
+      .header-search {
+        .header-mobile-search {
+          display: none;
+        }
+
+        .header-input-search {
+          position: relative;
+          display: flex;
+          bottom: 0;
+          background: $white;
+          border-radius: $border-radius;
+          
+          input {
+            flex-grow: 1;
+            width: 45vw;
+            height: 40px;
+            font-size: 1.2rem;
+            margin: 0;
+            border: none;
+            background: none;
+          }
+
+          button {
+            font-family: 'Titillium Web', sans-serif;
+            display: block;
+            width: 100px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+          }
+        } 
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-large) {
+  
+    .header-content {
+      gap: 2vw;
+      margin: 0 10vw;
+
+      .header-logo {
+        width: 9vw;
+        height: 18px;
+      }
+
+      .header-mobile-nav {
+        display: none;
+      }
+  
+      .header-search {
+        .header-mobile-search {
+          display: none;
+        }
+
+        .header-input-search {
+          display: flex;
+          width: 35vw;
+          height: 40px;
+
+          button {
+            width: 205px;
+          }
+        } 
+      }
+  
+      .header-account {
+        .header-mobile-account {
+          display: none;
+        }
+
+        .header-account-list {
+          display: flex;
+
+          ul {
+            li {
+              font-size: 1.2rem;
+              display: inline-block;
+              margin-right: 20px;
+              
+              &:last-child {
+                margin-right: 0;
+                border: 2px solid $primary;
+                border-radius: 8px;
+                padding: 10px 14px;
+              }
+
+              &:hover .icon {
+                color: $primary;
+              }
+
+              a {
+                color: $black;
+
+                &:hover {
+                  color: $primary;
+                }
+                .icon {
+                  font-size: 1.2rem;
+                }
+                span {
+                  font-size: 1.2rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

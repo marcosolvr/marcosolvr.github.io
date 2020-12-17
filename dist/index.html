@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maeztra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+  <link href="./css/style.css" rel="stylesheet"> 
+</head>
+<body>
+
+  <header>
+    <div class="header-message">Acompanhe as melhores promoções disponíveis aqui na Maeztra.</div>
+
+    <div class="header-content">
+      <div class="header-mobile-nav">
+        <a class="js-header-mobile-nav">
+          <ion-icon class="icon" name="menu-outline"></ion-icon>
+        </a>
+      </div>
+
+      <img class="header-logo" src="./images/logo.svg" alt="Maeztra Logo" />
+
+      <div class="header-search">
+        <div class="header-mobile-search">
+          <a class="js-header-mobile-search">
+            <ion-icon class="icon" name="search-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="header-input-search not-show js-header-input-search">
+          <input type="search" placeholder="O Que Você Busca?" />
+          <button>Buscar</button>
+        </div>
+      </div>
+      
+      <div class="header-account">
+        <div class="header-mobile-account">
+          <a href="#">
+            <ion-icon class="icon" name="bag-outline"></ion-icon>
+          </a>
+        </div>
+
+        <div class="header-account-list">
+          <ul>
+            <li><a href="#"><ion-icon class="icon" name="person-outline"></ion-icon> 
+              <span class="text-icon">Minha Conta</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="icon" name="heart-outline"></ion-icon>
+                <span class="text-icon">Minha Conta</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <ion-icon class="icon" name="bag-outline"></ion-icon>
+                <span class="text-icon">Meu Carrinho</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="not-show">
+    <ul>
+      <li><a href="#">Novidades</a></li>
+      <li><a href="#">Vestidos</a></li>
+      <li><a href="#">Roupas</a></li>
+      <li><a href="#">Sapatos</a></li>
+      <li><a href="#">Lingerie</a></li>
+      <li><a href="#">Acessórios</a></li>
+      <li><a href="#">OUTLET</a></li>
+    </ul>
+  </nav>
+
+  <div class="full-banner">
+    <div class="banner js-banner-carousel">
+      <div class="banner-item" style="background-image: url(./images/banner.png);">
+      <div class="banner-content">
+        <h1>Promoções de Outono</h1>
+        <h2>Confiras os melhores looks para combinar com você nesse Outono</h2>
+        <button class="banner-button">Conferir</button>
+      </div>
+      </div>
+      <div class="banner-item" style="background-image: url(./images/banner.png);">
+      <div class="banner-content">
+        <h1>Promoções de Outono</h1>
+        <h2>Confiras os melhores looks para combinar com você nesse Outono</h2>
+        <button class="banner-button">Conferir</button>
+      </div>
+      </div>
+      <div class="banner-item" style="background-image: url(./images/banner.png);">
+      <div class="banner-content">
+        <h1>Promoções de Outono</h1>
+        <h2>Confiras os melhores looks para combinar com você nesse Outono</h2>
+        <button class="banner-button">Conferir</button>
+      </div>
+      </div>
+      <div class="banner-item" style="background-image: url(./images/banner.png);">
+      <div class="banner-content">
+        <h1>Promoções de Outono</h1>
+        <h2>Confiras os melhores looks para combinar com você nesse Outono</h2>
+        <button class="banner-button">Conferir</button>
+      </div>
+      </div>
+      <div class="banner-item" style="background-image: url(./images/banner.png);">
+        <div class="banner-content">
+          <h1>Promoções de Outono</h1>
+          <h2>Confiras os melhores looks para combinar com você nesse Outono</h2>
+          <button class="banner-button">Conferir</button>
+        </div>
+        </div>
+    </div>
+    <div class="banner-navigation">
+      <button aria-label="Previous" class="glider-banner-prev js-banner-carousel-prev">
+        <ion-icon class="icon" name="chevron-back-outline"></ion-icon>
+      </button>
+      <button aria-label="Next" class="glider-banner-next js-banner-carousel-next">
+        <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>  
+      </button>
+      <div role="tablist" class="dots"></div>
+    </div>
+  </div>
+
+  <div class="reasons-to-buy">
+    <h3>Por que comprar na Maeztra?</h3>
+    <div class="reasons-to-buy-boxes js-reasons-to-buy-boxes">
+      <div class="boxe">
+        <img src="./images/planeta.svg" alt="Planeta" />
+        <div>
+          <h4>Produtos importados</h4>
+          <p>Produto de Alta Qualidade</p>
+        </div>
+      </div>
+
+      <div class="boxe">
+        <img src="./images/estoque.svg" alt="Galpão de estoque" />
+        <div>
+          <h4>Estoque no Brazil</h4>
+          <p>Produtos mais perto de você!</p>
+        </div>
+      </div>
+
+      <div class="boxe">
+        <img src="./images/troca.svg" alt="Caixa com círculo em volta" />
+        <div>
+          <h4>Trocas Garantidas</h4>
+          <p>Trocas em até 48 horas, vejas as regras</p>
+        </div>
+      </div>
+
+      <div class="boxe">
+        <img src="./images/desconto.svg" alt="Etiqueta de desconto" />
+        <div>
+          <h4>Ganhe 5% off</h4>
+          <p>Pagando à vista no Cartão</p>
+        </div>
+      </div>
+
+      <div class="boxe">
+        <img src="./images/frete.svg" alt="Caminhão de frete" />
+        <div>
+          <h4>Frete Grátis</h4>
+          <p>Em compras acima de R$ 499,00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="partner-brands">
+    <h3 class="section-title">Marcas Parceiras</h3>
+    <div class="partner-list js-partner-brands">
+      <div class="partner"><img src="./images/comma.png" alt="Comma logo" /></div>
+      <div class="partner"><img src="./images/melissa.png" alt="Melissa logo" /></div>
+      <div class="partner"><img src="./images/forever21.png" alt="Forever21 logo" /></div>
+      <div class="partner"><img src="./images/zara.png" alt="Zara logo" /></div>
+      <div class="partner"><img src="./images/anntaylor.png" alt="Anntaylor logo" /></div>
+    </div>
+  </section>
+
+  <section class="most-requested">
+    <h3 class="section-title">As Mais Pedidas</h3>
+    <div class="most-requested-list js-most-requested">
+      <div class="product">
+        <a href="#">
+          <img src="./images/pedido1.png" alt="" />
+        </a>
+          <div class="product-info">
+            <ul class="product-colors">
+              <li style="background-color:#DEAC71; border: 1px solid #3C3B79"></li>
+              <li style="background-color:#D37164;"></li>
+              <li style="background-color:#6497D3;"></li>
+              <li style="background-color:#3C3B79;"></li>
+            </ul>
+            <a href="#">
+              <h4>R$ 500,00</h4>
+              <h5>Faux Suede Mini Skirt</h5>
+            </a>
+            <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+            <button>Adicionar</button>
+          </div>
+      </div>
+      <div class="product">
+          <a href="#">
+            <img src="./images/pedido2.png" alt="" />
+          </a>
+            <div class="product-info">
+              <ul class="product-colors">
+                <li style="background-color:#1C1A19; border: 1px solid #3C3B79"></li>
+                <li style="background-color:#D84E4B;"></li>
+                <li style="background-color:#CFC9B0;"></li>
+                <li style="background-color:#EAE9E5;"></li>
+              </ul>
+            <a href="#">
+              <h4>R$ 320,00</h4>
+              <h5>Ruched Rose Print Mini Skirt</h5>
+            </a>
+              <p>A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
+              <button>Adicionar</button>
+            </div>
+        </div>
+        <div class="product">
+          <a href="#">
+            <img src="./images/pedido1.png" alt="" />
+          </a>
+            <div class="product-info">
+              <ul class="product-colors">
+                <li style="background-color:#DEAC71; border: 1px solid #3C3B79"></li>
+                <li style="background-color:#D37164;"></li>
+                <li style="background-color:#6497D3;"></li>
+                <li style="background-color:#3C3B79;"></li>
+              </ul>
+            <a href="#">
+              <h4>R$ 500,00</h4>
+              <h5>Faux Suede Mini Skirt</h5>
+            </a>
+              <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+              <button>Adicionar</button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="#">
+            <img src="./images/pedido2.png" alt="" />
+          </a>
+            <div class="product-info">
+              <ul class="product-colors">
+                <li style="background-color:#1C1A19; border: 1px solid #3C3B79"></li>
+                <li style="background-color:#D84E4B;"></li>
+                <li style="background-color:#CFC9B0;"></li>
+                <li style="background-color:#EAE9E5;"></li>
+              </ul>
+            <a href="#">
+              <h4>R$ 320,00</h4>
+              <h5>Ruched Rose Print Mini Skirt</h5>
+            </a>
+              <p>A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
+              <button>Adicionar</button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="#">
+            <img src="./images/pedido1.png" alt="" />
+          </a>
+            <div class="product-info">
+              <ul class="product-colors">
+                <li style="background-color:#DEAC71; border: 1px solid #3C3B79"></li>
+                <li style="background-color:#D37164;"></li>
+                <li style="background-color:#6497D3;"></li>
+                <li style="background-color:#3C3B79;"></li>
+              </ul>
+            <a href="#">
+              <h4>R$ 500,00</h4>
+              <h5>Faux Suede Mini Skirt</h5>
+            </a>
+              <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+              <button>Adicionar</button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="#">
+            <img src="./images/pedido2.png" alt="" />
+          </a>
+            <div class="product-info">
+              <ul class="product-colors">
+                <li style="background-color:#1C1A19; border: 1px solid #3C3B79"></li>
+                <li style="background-color:#D84E4B;"></li>
+                <li style="background-color:#CFC9B0;"></li>
+                <li style="background-color:#EAE9E5;"></li>
+              </ul>
+            <a href="#">
+              <h4>R$ 320,00</h4>
+              <h5>Ruched Rose Print Mini Skirt</h5>
+            </a>
+              <p>A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
+              <button>Adicionar</button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="#">
+            <img src="./images/pedido1.png" alt="" />
+          </a>
+            <div class="product-info">
+              <ul class="product-colors">
+                <li style="background-color:#DEAC71; border: 1px solid #3C3B79"></li>
+                <li style="background-color:#D37164;"></li>
+                <li style="background-color:#6497D3;"></li>
+                <li style="background-color:#3C3B79;"></li>
+              </ul>
+            <a href="#">
+              <h4>R$ 500,00</h4>
+              <h5>Faux Suede Mini Skirt</h5>
+            </a>
+              <p>A faux suede mini skirt featuring exposed button-front closures and panel seam construction.</p>
+              <button>Adicionar</button>
+            </div>
+          </a>
+        </div>
+        <div class="product">
+          <a href="#">
+            <img src="./images/pedido2.png" alt="" />
+          </a>
+            <div class="product-info">
+              <ul class="product-colors">
+                <li style="background-color:#1C1A19; border: 1px solid #3C3B79"></li>
+                <li style="background-color:#D84E4B;"></li>
+                <li style="background-color:#CFC9B0;"></li>
+                <li style="background-color:#EAE9E5;"></li>
+              </ul>
+            <a href="#">
+              <h4>R$ 320,00</h4>
+              <h5>Ruched Rose Print Mini Skirt</h5>
+            </a>
+              <p>A satin mini skirt featuring an allover floral print, ruched side with self-tie closure, concealed back zipper, and a flounce hem.</p>
+              <button>Adicionar</button>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="most-requested-navigation">
+        <button aria-label="Previous" class="glider-most-requested-prev js-most-requested-prev">
+          <ion-icon class="icon" name="chevron-back-outline"></ion-icon>
+        </button>
+        <button aria-label="Next" class="glider-most-requested-next js-most-requested-next">
+          <ion-icon class="icon" name="chevron-forward-outline"></ion-icon>  
+        </button>
+      </div>
+  </section>
+
+  <section class="new-collection-banner">
+    <div>
+      <h3 class="section-title">Loren ipsum</h3>
+      <p class="mobile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim dictum. Mattis proin ut quis donec sed eget nulla. Vel mi ut mauris integer. Nibh sagittis in lobortis sed cursus condimentum velit pharetra. Amet luctus ut vulputate scelerisque.</p>
+      <p class="desktop-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum mauris posuere fusce proin mattis. Hendrerit cras ut nunc enim dictum. Mattis proin ut quis donec sed eget nulla. Vel mi ut mauris integer. Nibh sagittis in lobortis sed cursus condimentum velit pharetra. Amet luctus ut vulputate scelerisque placerat consequat. Neque arcu mi iaculis id. Vel vitae, pharetra, a nec tristique. Feugiat id tortor eu mauris pulvinar velit massa. Ut ornare augue eget convallis volutpat aliquet. Sed sed pellentesque porttitor phasellus donec condimentum sit sapien.</p>
+    </div>
+    <img src="./images/nova-colecao.png" alt="Modelo com a nova coleção" />
+  </section>
+
+  <section class="newsletter-section">
+    <h3 class="section-title">Recebe Nossa Newsletter</h3>
+    <div>
+      <input type="email" placeholder="Digite seu e-mail" />
+      <button>Enviar</button>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <div>
+        <h3 class="js-footer-nav-dropdawn-link">Informações</h3>
+        <ul class="not-show">
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Prazo de Envio</a></li>
+          <li><a href="#">Trocas e Devoluções</a></li>
+          <li><a href="#">Promoções e Cupons</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="js-footer-nav-dropdawn-link">Minha Conta</h3>
+        <ul class="not-show">
+          <li><a href="#">Minha Conta</a></li>
+          <li><a href="#">Meus Pedidos</a></li>
+          <li><a href="#">Cadastre-se</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="js-footer-nav-dropdawn-link">Onde nos Encontrar</h3>
+        <ul class="not-show">
+          <li><a href="#">Lojas</a></li>
+          <li><a href="#">Endereço</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="external-links">
+    <div>
+      <a href="#" target="_blank">
+        <img src="./images/facebook.svg" alt="Facebook logo" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="./images/linkedin.svg" alt="Linkedin logo" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="./images/instagram.svg" alt="Instagram logo" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="./images/youtube.svg" alt="Youtube logo" />
+      </a>
+    </div>
+    <div>
+      <a href="#" target="_blank">
+        <img src="./images/visa.svg" alt="Cartão Visa" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="./images/mastercard.svg" alt="Cartão Mastercard" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="./images/visa.svg" alt="Cartão Visa" />
+      </a>
+      <a href="#" target="_blank">
+        <img src="./images/mastercard.svg" alt="Cartão Mastercard" />
+      </a>
+    </div>
+    <div class="powered">
+      <a href="#" target="_blank">
+        <p>Powered by</p>
+        <img src="./images/vtex.svg" alt="Vtex logo" />
+      </a>
+      <a href="#" target="_blank">
+        <p>Developed by</p>
+        <img src="./images/maeztra.svg" alt="Maeztra logo" />
+      </a>
+    </div>
+  </div>
+
+  <section class="modal">
+    <div class="modal-content">
+      <button class="modal-close-button">FECHAR</button>
+      <img src="./images/modal-image.png" alt="Atleta amarrando cadarço" />
+      <div>
+        <ion-icon name="mail-outline" class="icon-modal"></ion-icon>
+        <span>BEM VINDO À MAEZTRA</span>
+
+        <h3>Receba em Primeira mão <br><b>desconto e ofertas exclusivas</b></h3>
+
+        <input type="text" placeholder="Digite seu e-mail" />
+        <button>ENVIAR</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+  <script src="./js/bundle.js"></script>
+</body>
+</html>

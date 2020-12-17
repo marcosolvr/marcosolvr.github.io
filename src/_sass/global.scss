@@ -1,0 +1,68 @@
+@import "./colors.scss";
+
+$break-medium: 600px;
+$break-large: 1150px;
+$border-radius: 10px;
+
+* {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: $whiteLight;
+  color: $black;
+  overflow-x: hidden;
+}
+
+a {
+  color: $black;
+  &:hover {
+    color: $primary;
+  }
+}
+
+input, button {
+  border: none;
+}
+
+input {
+  padding: 0 14px 0 24px;
+  outline: none;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+  background-color: $primary;
+  color: $whiteLight;
+  font-weight: 400;
+  background: $primary;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primaryDark;
+  }
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @media only screen and (min-width: $break-large) {
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+  }
+}
+
+.not-show {
+  display: none;
+}
+.show {
+  display: block;
+}
