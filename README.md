@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/images/logo.svg" />
+    <img alt="Maeztra" title="Maeztra" src="./assets/images/logo.svg" />
 </h1>
 
 <h4 align="center"> 
