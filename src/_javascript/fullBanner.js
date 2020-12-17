@@ -3,6 +3,8 @@ const bannerDraggable = screen.width < 1150 ? true : false
 new Glider(document.querySelector('.js-banner-carousel'), {
   slideToShow: 1,
   SlidesToScroll: 1,
+  scrollLock: true,
+  scrollLockDelay: 50,
   dots: '.dots',
   draggable: bannerDraggable,
   arrows: {
