@@ -2,9 +2,9 @@
     <img alt="Maeztra" title="Maeztra" src="./doc/maeztra.png" />
 </h1>
 
-<h2 align="center"> 
+<h4 align="center"> 
 	Maeztra 1.0
-</h2>
+</h4>
 
 <p align="center">
     <img alt="Develop Marcos" src="https://img.shields.io/badge/develop-marcosolvr-%2304D361">
