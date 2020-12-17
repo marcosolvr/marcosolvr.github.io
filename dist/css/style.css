@@ -42,9 +42,15 @@ button {
       font-size: 2.7rem;
       margin-bottom: 30px; } }
 
+.not-show {
+  display: none; }
+
+.show {
+  display: block; }
+
 header {
-  /* for mobile */
   width: 100vw;
+  position: relative;
   background-color: #FFFFFF;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08); }
   header .header-message {
@@ -71,74 +77,86 @@ header {
     header .header-content .header-search .header-mobile-search {
       display: block; }
     header .header-content .header-search .header-input-search {
-      display: none; }
+      position: absolute;
+      left: 0;
+      bottom: -30px;
+      z-index: 99; }
+      header .header-content .header-search .header-input-search input {
+        width: 90vw;
+        height: 40px;
+        margin: 0 5vw;
+        font-size: 1.2rem;
+        border-radius: 4px;
+        border: 2px solid #EFEFEF; }
+      header .header-content .header-search .header-input-search button {
+        display: none; }
     header .header-content .header-account .header-mobile-account {
       display: block; }
     header .header-content .header-account .header-account-list {
       display: none; }
   @media only screen and (min-width: 600px) {
-    header {
-      /* for tablet */ }
-      header .header-content {
-        margin: 0 5vw; }
-        header .header-content .header-search .header-mobile-search {
-          display: none; }
-        header .header-content .header-search .header-input-search {
-          display: flex;
+    header .header-content {
+      margin: 0 5vw; }
+      header .header-content .header-search .header-mobile-search {
+        display: none; }
+      header .header-content .header-search .header-input-search {
+        position: relative;
+        display: flex;
+        bottom: 0;
+        background: #EFEFEF;
+        border-radius: 10px; }
+        header .header-content .header-search .header-input-search input {
+          flex-grow: 1;
+          width: 45vw;
           height: 40px;
-          border-radius: 10px;
-          background: #EFEFEF; }
-          header .header-content .header-search .header-input-search input {
-            flex-grow: 1;
-            width: 35vw;
-            font-size: 1.2rem;
-            background: none; }
-          header .header-content .header-search .header-input-search button {
-            width: 100px;
-            font-size: 1.2rem;
-            border-radius: 8px; } }
+          font-size: 1.2rem;
+          margin: 0;
+          border: none;
+          background: none; }
+        header .header-content .header-search .header-input-search button {
+          font-family: 'Titillium Web', sans-serif;
+          display: block;
+          width: 100px;
+          font-size: 1.2rem;
+          border-radius: 8px; } }
   @media only screen and (min-width: 1150px) {
-    header {
-      /* for desktop */ }
-      header .header-content {
-        gap: 2vw;
-        margin: 0 10vw; }
-        header .header-content .header-logo {
-          width: 9vw;
-          height: 18px; }
-        header .header-content .header-mobile-nav {
-          display: none; }
-        header .header-content .header-search .header-mobile-search {
-          display: none; }
-        header .header-content .header-search .header-input-search {
-          display: flex;
-          width: 35vw;
-          height: 40px;
-          border-radius: 10px;
-          background: #EFEFEF; }
-          header .header-content .header-search .header-input-search button {
-            width: 119px; }
-        header .header-content .header-account .header-mobile-account {
-          display: none; }
-        header .header-content .header-account .header-account-list {
-          display: flex; }
-          header .header-content .header-account .header-account-list ul li {
-            font-size: 1.2rem;
-            display: inline-block;
-            margin-right: 20px; }
-            header .header-content .header-account .header-account-list ul li:last-child {
-              margin-right: 0;
-              border: 2px solid #FAA500;
-              border-radius: 8px;
-              padding: 10px 14px; }
-            header .header-content .header-account .header-account-list ul li a {
-              color: #353535; }
-              header .header-content .header-account .header-account-list ul li a:hover {
-                color: #FAA500; }
-              header .header-content .header-account .header-account-list ul li a .icon {
-                font-size: 1.2rem; }
-              header .header-content .header-account .header-account-list ul li a span {
-                font-size: 1.2rem; } }
+    header .header-content {
+      gap: 2vw;
+      margin: 0 10vw; }
+      header .header-content .header-logo {
+        width: 9vw;
+        height: 18px; }
+      header .header-content .header-mobile-nav {
+        display: none; }
+      header .header-content .header-search .header-mobile-search {
+        display: none; }
+      header .header-content .header-search .header-input-search {
+        display: flex;
+        width: 35vw;
+        height: 40px; }
+        header .header-content .header-search .header-input-search button {
+          width: 205px; }
+      header .header-content .header-account .header-mobile-account {
+        display: none; }
+      header .header-content .header-account .header-account-list {
+        display: flex; }
+        header .header-content .header-account .header-account-list ul li {
+          font-size: 1.2rem;
+          display: inline-block;
+          margin-right: 20px; }
+          header .header-content .header-account .header-account-list ul li:last-child {
+            margin-right: 0;
+            border: 2px solid #FAA500;
+            border-radius: 8px;
+            padding: 10px 14px; }
+          header .header-content .header-account .header-account-list ul li a {
+            color: #353535; }
+            header .header-content .header-account .header-account-list ul li a:hover {
+              color: #FAA500; }
+            header .header-content .header-account .header-account-list ul li a .icon {
+              font-size: 1.2rem; }
+            header .header-content .header-account .header-account-list ul li a span {
+              font-size: 1.2rem; } }
 
 nav {
   display: none; }
@@ -505,11 +523,9 @@ footer {
         footer .footer-nav div h3::after {
           content: '+';
           float: right; }
-      footer .footer-nav div ul {
-        display: inline-block; }
-        footer .footer-nav div ul li {
-          margin-bottom: 14px;
-          font-size: 1.2rem; }
+      footer .footer-nav div ul li {
+        margin-bottom: 14px;
+        font-size: 1.2rem; }
   @media only screen and (min-width: 600px) {
     footer {
       margin: 0 auto;
@@ -570,6 +586,96 @@ footer {
             line-height: 2rem; }
           .external-links div a:last-child {
             margin-right: 0; } }
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.7);
+  display: none; }
+  .modal .modal-content {
+    position: absolute;
+    width: 85vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    padding: 30px 0 24px 0; }
+    .modal .modal-content .modal-close-button {
+      position: absolute;
+      background: none;
+      top: -25px;
+      right: 0;
+      font-size: 1rem; }
+    .modal .modal-content img {
+      display: none; }
+    .modal .modal-content div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #787D83; }
+      .modal .modal-content div .icon-modal {
+        width: 24px;
+        height: 24px;
+        margin-bottom: 18px; }
+      .modal .modal-content div h3 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 13px 0 25px 0; }
+        .modal .modal-content div h3 b {
+          font-size: 1.4rem; }
+      .modal .modal-content div input {
+        width: 75vw;
+        height: 44px;
+        font-size: 1.2rem;
+        border: 1px solid #C4C4C4;
+        border-radius: 5px;
+        padding: 10px 44px 10px 13px;
+        box-sizing: border-box;
+        margin-bottom: 12px; }
+      .modal .modal-content div button {
+        font-family: 'Titillium Web', sans-serif;
+        width: 75vw;
+        height: 40px;
+        font-size: 1.0rem;
+        border-radius: 5px;
+        font-weight: 700;
+        background: #FAA500; }
+  @media only screen and (min-width: 600px) {
+    .modal {
+      width: 100%;
+      height: 100%; }
+      .modal .modal-content {
+        width: 50vw; }
+        .modal .modal-content div .icon-modal {
+          width: 35px;
+          height: 35px; }
+        .modal .modal-content div h3 {
+          font-size: 1.7rem; }
+        .modal .modal-content div input {
+          width: 45vw; }
+        .modal .modal-content div button {
+          width: 45vw; } }
+  @media only screen and (min-width: 1150px) {
+    .modal .modal-content {
+      position: absolute;
+      width: 848px;
+      padding: 0; }
+      .modal .modal-content img {
+        display: block;
+        float: left; }
+      .modal .modal-content div {
+        display: flex;
+        margin-top: 130px; }
+        .modal .modal-content div input {
+          width: 322px; }
+        .modal .modal-content div button {
+          width: 322px; } }
 
 
 /*# sourceMappingURL=style.css.map*/

@@ -41,6 +41,27 @@ new Glider(document.querySelector('.js-most-requested'), {
     next: '.js-most-requested-next'
   }
 });
+window.addEventListener('load', function () {
+  var $modal = document.querySelector('.modal');
+  var $modalClose = document.querySelector('.modal-close-button');
+  $modal.style.display = 'block';
+  $modalClose.addEventListener('click', function () {
+    $modal.style.display = 'none';
+  });
+});
+var $footerNavDropdawn = document.querySelectorAll('.js-footer-nav-dropdawn-link');
+var $headerMobileSearch = document.querySelector('.js-header-mobile-search');
+var $headerInputSearch = document.querySelector('.js-header-input-search');
+$footerNavDropdawn.forEach(function (el) {
+  el.addEventListener('click', function () {
+    var $element = el.parentElement.closest('div').lastElementChild;
+    $element.classList.toggle('show');
+  });
+});
+$headerMobileSearch.addEventListener('click', function () {
+  console.log('clicou');
+  $headerInputSearch.classList.toggle('show');
+}); // console.log($footerNavDropdawn[0].parentElement.closest('div').lastElementChild)
 
 /***/ }),
 

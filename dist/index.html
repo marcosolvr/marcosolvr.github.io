@@ -25,12 +25,12 @@
 
       <div class="header-search">
         <div class="header-mobile-search">
-          <a href="#">
+          <a class="js-header-mobile-search">
             <ion-icon class="icon" name="search-outline"></ion-icon>
           </a>
         </div>
 
-        <div class="header-input-search">
+        <div class="header-input-search not-show js-header-input-search">
           <input type="search" placeholder="O Que Você Busca?" />
           <button>Buscar</button>
         </div>
@@ -376,8 +376,8 @@
   <footer>
     <div class="footer-nav">
       <div>
-        <h3>Informações</h3>
-        <ul>
+        <h3 class="js-footer-nav-dropdawn-link">Informações</h3>
+        <ul class="not-show">
           <li><a href="#">Quem Somos</a></li>
           <li><a href="#">Prazo de Envio</a></li>
           <li><a href="#">Trocas e Devoluções</a></li>
@@ -385,16 +385,16 @@
         </ul>
       </div>
       <div>
-        <h3>Minha Conta</h3>
-        <ul>
+        <h3 class="js-footer-nav-dropdawn-link">Minha Conta</h3>
+        <ul class="not-show">
           <li><a href="#">Minha Conta</a></li>
           <li><a href="#">Meus Pedidos</a></li>
           <li><a href="#">Cadastre-se</a></li>
         </ul>
       </div>
       <div>
-        <h3>Onde nos Encontrar</h3>
-        <ul>
+        <h3 class="js-footer-nav-dropdawn-link">Onde nos Encontrar</h3>
+        <ul class="not-show">
           <li><a href="#">Lojas</a></li>
           <li><a href="#">Endereço</a></li>
         </ul>
@@ -442,6 +442,22 @@
       </a>
     </div>
   </div>
+
+  <section class="modal">
+    <div class="modal-content">
+      <button class="modal-close-button">FECHAR</button>
+      <img src="./images/modal-image.png" alt="Atleta amarrando cadarço" />
+      <div>
+        <ion-icon name="mail-outline" class="icon-modal"></ion-icon>
+        <span>BEM VINDO À MAEZTRA</span>
+
+        <h3>Receba em Primeira mão <br><b>desconto e ofertas exclusivas</b></h3>
+
+        <input type="text" placeholder="Digite seu e-mail" />
+        <button>ENVIAR</button>
+      </div>
+    </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
   <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
