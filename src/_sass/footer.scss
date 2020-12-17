@@ -1,0 +1,66 @@
+@import "./colors.scss";
+
+footer {
+  padding: 37px 0 47px 0;
+  margin: 0 5vw;
+  
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 17px;
+  
+        &::after {
+          content: '+';
+          float: right;
+        }
+      }
+      ul {
+        li {
+          margin-bottom: 14px;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-medium) {
+    margin: 0 auto;
+    padding: 37px 5vw 57px 5vw;
+    max-width: 950px;
+    
+    .footer-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          &::after {
+            display: none;
+          }
+        }
+        ul {
+          display: inline-block;
+          li {
+            margin-bottom: 14px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-large) {
+    padding: 37px 0 57px 0;
+  }
+}

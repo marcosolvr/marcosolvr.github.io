@@ -1,0 +1,154 @@
+@import "./colors.scss";
+
+.full-banner {
+  position: relative;
+
+  .banner {
+
+    .glider-track {
+      height: 320px;
+    }
+    
+    .banner-item {
+      position: relative;
+      background-position: 31% 50%;
+      background-size: cover;
+      
+      .banner-content {
+        position: absolute;
+        color: $whiteLight;
+        max-width: 220px;
+        margin: 10vh 17vw;
+
+        h1 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 2.6rem;
+        }
+        h2 {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          font-size: 1.2rem;
+          line-height: 1.4rem;
+          margin: 24px 0 16px 0;
+        }
+        button {
+          width: 76px;
+          height: 28px;
+          font-size: 1.3rem;
+          font-weight: 700;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  
+  .banner-navigation {
+    .glider-banner-prev, .glider-banner-next {
+      display: none;
+      background: none;
+      color: $black;
+
+      &:hover {
+        background: none;
+      }
+    }
+
+    .dots {
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+    }
+    .glider-dot {
+      border: 2px solid $primary;
+      background: transparent;
+      bottom: 0;
+      z-index: 999;
+      width: 8px;
+      height: 8px;
+    }
+    .active {
+      color: $primary;
+      background: $primary;
+    }
+  }
+
+  @media only screen and (min-width: $break-medium) {
+    .banner {  
+      .banner-item {
+        .banner-content {
+          max-width: 370px;
+          margin: 10vh 17vw;
+  
+          h2 {
+            margin: 24px 35px 16px 0;
+          }
+          button {
+            width: 100px;
+            height: 40px;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+  
+  @media only screen and (min-width: $break-large) {
+    .banner {
+
+      .glider-track {
+        height: 600px;
+      }
+      
+      .banner-item {
+        position: relative;
+        background-position: center;
+        
+        .banner-content {
+          max-width: 475px;
+          margin: 150px 0 0 323px;
+  
+          h1 {
+            font-size: 3.3rem;
+          }
+          h2 {
+            font-size: 1.7rem;
+            line-height: 2rem;
+            margin: 40px 0 32px 0;
+          }
+          button {
+            width: 128px;
+            height: 48px;
+          }
+        }
+      }
+    }
+
+    .banner-navigation {
+      .glider-banner-prev, .glider-banner-next {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .glider-banner-prev {
+        left: 161px;
+        .icon {
+          font-size: 32px;
+        }
+      }
+
+      .glider-banner-next {
+        right: 161px;
+        .icon {
+          font-size: 32px;
+        }
+      }
+
+      .glider-dot {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

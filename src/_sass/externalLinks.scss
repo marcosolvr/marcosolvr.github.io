@@ -1,0 +1,54 @@
+@import "./colors.scss";
+
+.external-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $black;
+  padding-top: 24px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 36px;
+    a {
+      margin-right: 24px;
+
+      p {
+        color: $whiteLight;
+        line-height: 2rem;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $break-medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 5vw 27px 5vw;
+
+    div {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 0;
+      a {
+        margin-right: 22px;
+  
+        p {
+          color: $whiteLight;
+          line-height: 2rem;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

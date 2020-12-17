@@ -1,0 +1,74 @@
+@import "./colors.scss";
+
+.newsletter-section {
+  background-color: #FAFAFA;
+  border-top: 2px solid #EFEFEF;
+  border-bottom: 2px solid #EFEFEF;
+  padding: 24px 0;
+
+  div {
+    display: flex;
+    margin: 0 5vw;
+  
+    justify-content: space-between;
+
+    input {
+      border: 1px solid #353535;
+      border-radius: 4px;
+      padding: 3px 14px 3px 24px;
+      width: 60vw;
+    }
+    button {
+      font-family: 'Titillium Web', sans-serif;
+      width: 25vw;
+      height: 26px;
+      border-radius: 4px;
+    }
+  }
+  @media only screen and (min-width: $break-medium) {
+    div {
+      input {
+        width: 70vw;
+        height: 40px;
+        font-size: 1.3rem;
+      }
+      button {
+        width: 20vw;
+        height: 40px;
+        border-radius: 4px;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  @media only screen and (min-width: $break-large) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    padding: 0 5vw;
+    
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 0;
+      margin-right: 50px;
+    }
+
+    div {
+      margin: 0;
+      align-items: center;
+      justify-content: space-between;
+  
+      input {
+        padding: 3px 14px 3px 24px;
+        width: 500px;
+        height: 40px;
+      }
+      button {
+        width: 130px;
+        height: 40px;
+        font-weight: 700;
+      }
+    }
+  }
+}
