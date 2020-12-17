@@ -17,6 +17,7 @@ $border-radius: 10px;
 body {
   background-color: $whiteLight;
   color: $black;
+  overflow-x: hidden;
 }
 
 a {
