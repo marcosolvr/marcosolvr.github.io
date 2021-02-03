@@ -12,11 +12,11 @@ window.addEventListener('load', () => {
   
     if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
     {
-      alert('iOS');
+      window.location = "https://www.notion.so/Tarefas-f567c5c709624e958c4cf9734a78bd03#650b831d1e754505820779c27cd88d38"
     }
     else if( userAgent.match( /Android/i ) )
     {
-      alert('Android');
+      window.location = "https://www.notion.so/Tarefas-f567c5c709624e958c4cf9734a78bd03#642167cd9f654a799b2bfc0c891451de"
     }
     else
     {
