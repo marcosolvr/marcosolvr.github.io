@@ -6,4 +6,3 @@ import Header from './_javascript/header';
 import Modal from './_javascript/modal';
 import MostRequested from './_javascript/mostRequested';
 import Nav from './_javascript/nav';
-import MobileDetect from './_javascript/mobileDetect';
